@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whether Weather App</title>
+    <script src="https://kit.fontawesome.com/66b2a64f9c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- date format (M/D/YYYY), *Fahrenheit, %, mph-->
+    <header>
+        <h1>Whether Weather Dashboard</h1>
+    </header>
+    <!-- dynamic gen city-boxes-->
+
+    <aside>
+        <section class="city"><!--searchbox button with magnifying glass-->
+        <label for="city-search">Search for a City:</label>
+        <input type="text" placeholder="Search.." 
+        id="city" name="city-search">
+        <button class="search-btn"><i class="fas fa-search-location"></i></button>
+        <div class="saved-city">Saved City Placeholder</div>
+        </section>
+    </aside>
+    <!--City/Date/weather icon; uv-i color-coded; inline elements-->
+    <main class="current-weather" id="current-weather">
+        <p id="current-city">Current City</p>
+        <p id="temp">Temperature:</p>
+        <p id="humidity">Humidity:</p>
+        <p id="wind">Wind Speed:</p>
+        <p id="wind">UV Index</p>
+    
+    <!--5 cards: date/icon/temp/humidity-->
+    <section class="future-weather" id="future-weather">
+        <h2>5 Day Forecast: </h2>
+        <div id="weather-cards">
+        <div>
+            <div class="forecast-date"></div>
+            <div class="forecast-icon"></div>
+            <div class="forecast-temp"></div>
+            <div class="forecast-humidity"></div>
+        </div>
+        <div>
+            <div class="forecast-date"></div>
+            <div class="forecast-icon"></div>
+            <div class="forecast-temp"></div>
+            <div class="forecast-humidity"></div>
+        </div>
+        <div>
+            <div class="forecast-date"></div>
+            <div class="forecast-icon"></div>
+            <div class="forecast-temp"></div>
+            <div class="forecast-humidity"></div>
+        </div>
+        <div>
+            <div class="forecast-date"></div>
+            <div class="forecast-icon"></div>
+            <div class="forecast-temp"></div>
+            <div class="forecast-humidity"></div>
+        </div>
+        <div>
+            <div class="forecast-date"></div>
+            <div class="forecast-icon"></div>
+            <div class="forecast-temp"></div>
+            <div class="forecast-humidity"></div>
+        </div>
+    </div>
+    </section>
+    </main>
+    
+</body>
+</html>

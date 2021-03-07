@@ -1,0 +1,21 @@
+Whether-Weather Plan/JS:
+
+Search:
+//event 
+Click, function(fetch); 
+//
+Fetch data: 
+getAPI function()
+Get by ?city
+To LocalStorage, JSON/string/parse and set/get: makes an object/array
+Loops for data
+Sort Data
+Name/Date/Icon: 
+Function to recognize icons by keyword
+Temp/humidity/wind/uv-index
+Function to change color based on uv index value ranges
+5 day forecast data 
+Functions to populate those cards...
+Function to save previously viewed city weather data by cityName and a retrieve by click function (event)
+
+

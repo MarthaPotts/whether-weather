@@ -1,0 +1,57 @@
+body {
+    font-family:Arial, Helvetica, sans-serif
+}
+/*style the header*/
+header {
+    background-color: lightgreen;
+    padding: 10px;
+    width: auto;
+    
+}
+h1 {
+    text-align: center;
+}
+
+
+/* style the aside */
+
+aside {
+    background-color: lightgreen;
+    height: 500px;
+    width: 470px;
+    margin-top: 10px;
+    float: left;
+    margin: 5px;
+}
+    
+.city {
+    padding-top: 10px;
+    text-align: center;
+    font-size: larger;
+}
+.search-btn {
+    padding: 2px;
+}
+.saved-city {
+    border: thin solid gray;
+    padding: 5px;
+    background-color: white;
+}
+
+/*style the main*/
+main {
+    background-color: lightgray;
+    margin: 10px;
+}
+#current-city {
+    font-size: 20px;
+}
+
+/*style the forecast cards section */
+.future-weather {
+    background-color: lightgray;
+    margin: 100px;
+}
+#weather-cards {
+    display: inline-block;
+}
