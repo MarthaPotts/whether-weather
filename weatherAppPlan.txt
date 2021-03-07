@@ -19,3 +19,5 @@ Functions to populate those cards...
 Function to save previously viewed city weather data by cityName and a retrieve by click function (event)
 
 
+
+
