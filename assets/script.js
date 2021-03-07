@@ -1,5 +1,7 @@
 //assignment
 
+//OWM, Free Account Key (can I store this as a variable? the whole url request?)
+//renders own icons :)
 
 //get the html linked to js
 //functions
@@ -10,7 +12,7 @@ function getApi(){
   var requestUrl = '#'
   //pass url through fetch()
   fetch(requestUrl)
-  //"makes a promise" to return the response from the request sent to the url
+  //"makes a promise" to return the response from the request sent to(the server for) the url
     .then(function(response){
       // return response passed through .json(), string/object data
        return response.json();
@@ -20,13 +22,13 @@ function getApi(){
     })
     //loop over the data to sort/render to the window
     for(var i=-0; i < data.length; i++){
-      //create the elements needed/wanted to render
-      
+      //create the elements needed/wanted to render(our data: cityName, date, temp, humidity, wind speed, uv index)
+       //need to render current weather and forecast
+      //need function to set local storage/set a click to render history, generate access click to history
+    
     }
 }
-  // retrieve city weather data from API and put in local strorage
-
-  //sort local storage and render in specific sections/elements
+  
 
 
 //eventlisteners
