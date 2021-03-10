@@ -18,6 +18,10 @@ Function to change color based on uv index value ranges
 Functions to populate those cards...
 Function to save previously viewed city weather data by cityName and a retrieve by click function (event)
 
-
+call API, fetch/GET data (discern if it's one call or 2 calls for current and 5-day-forecast)
+if its 2 calls, set up function for 2 calls. 
+response from API, save to localStorage with setItem. Loop through data to create a sort/render function that will render the current and forecast for current-city-selection; 
+need to have a getItem function to retrieve previous-city-searches. Previous city searches should be logged onto the window via SavedCities, by which a click would trigger/call the function to retrieve the data for that city from Local LocalStorage
+the data needs saved to be retrieved, so it should all go to localStorage, then be rendered/retrieved. 
 
 

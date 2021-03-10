@@ -8,6 +8,7 @@ var forecastThree = document.getElementById('day3');
 var forecastFour = document.getElementById('day4');
 var forecastFive = document.getElementById('day5');
 
+var APIKey = "77ad88c1295b1b624d571e5ca36da725";
 //if two sets of data/2 calls to API,name the 2 datasets
 var currentData =
 var forecastData =
@@ -21,7 +22,7 @@ var forecastData =
 
 function getApi(){
   //set url to variable
-  var requestUrl = '#'
+  var requestUrl = 'api.openweathermap.org/data/2.5/weather?q=${city name}&appid=${API key}'
   //pass url through fetch()
   fetch(requestUrl)
   //"makes a promise" to return the response from the request sent to(the server for) the url
@@ -31,8 +32,9 @@ function getApi(){
     })
     .then(function(data){ //promise to return data
       console.log(data) //console.log the data //set data to localStorage
+      //localStorage.setItem(data)
     })
-    //loop over the data to sort/render to the window/get from localStorage
+    //loop over the data to sort/render to the window/get from localStorage //var currentData = JSON.parse(localStorage.getItem("data"))
     for(var i=-0; i < data.length; i++){
       //create the elements needed/wanted to render(our data: cityName, date, temp, humidity, wind speed, uv index)
       //current
@@ -73,12 +75,12 @@ function getApi(){
 
   //need to render current weather and forecast (uv index needs textcolor/backgroundcolor change)
       //current
-      cityName.textContent = data[i].
-      weatherIcon.textContent = data[i].
+      cityName.textContent = data[i].name
+      weatherIcon.textContent = data[i].weather.icon
       currentDate.textContent = data[i].
-      currentTemp.textContent = data[i]. 
-      currentHumidity.textContent = data[i].
-      currentWindSpeed.textContent = data[i].
+      currentTemp.textContent = data[i].main.temp//also has unit specification unit.value? or another var?
+      currentHumidity.textContent = data[i].main.humidity
+      currentWindSpeed.textContent = data[i].wind.speed//also has unit spec
       uvIndex.textContent = data[i].
       //forecast
       dayOneDate.textContent = data[i].
@@ -106,7 +108,7 @@ function getApi(){
       dayFiveTemp.textContent = data[i].
       dayFiveHumidity.textContent = data[i].
 
-      //appendChild, to the parent container (append(varName))
+      //appendChild, to the parent container (append(varName))..?appendChild()?
       //current
       renderCurrent.append(cityName);
       renderCurrent.append(weatherIcon);
