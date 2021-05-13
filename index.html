@@ -6,40 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whether Weather App</title>
     <script src="https://kit.fontawesome.com/66b2a64f9c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="Main/styles/style.css">
 </head>
 <body>
     <!-- date format (M/D/YYYY), *Fahrenheit, %, mph-->
-    <header>
+    <header class='header'>
         <h1>Whether Weather Dashboard</h1>
     </header>
     <!-- dynamic gen city-boxes-->
-
-    <aside>
+    <div class='container'>
+    <aside class='saved'>
         <section class="city"><!--searchbox button with magnifying glass-->
-        <label for="city-search">Search for a City:</label>
+        <label for="city-search" class='city-search'>Search for a City:</label>
         <input type="text" placeholder="Search.." 
         id="city" name="city-search">
         <button class="search-btn"><i class="fas fa-search-location"></i></button>
-        <div class="saved-city">Saved City Placeholder</div>
+
+        <div class="saved-city">
+          <a href=#><p>Saved City Placeholder</p></a>
+        </div>
         </section>
     </aside>
     <!--City/Date/weather icon; uv-i color-coded; inline elements-->
-    <main>
-        <div class="current" id="current"></div>
+    <main class='current-forecast'>
+        <div class="current" id="current">
+          <h3>Current</h3>
+          <p>need some gibberish in here</p>
+          <p>Sunny 85 degrees F</p>
+          <p>Wind Speed @ 6 mph</p>
+          <p>UVIndex: 8</p>
+        </div>
         
     <!--5 cards: date/icon/temp/humidity-->
         <div class="forecast" id="forecast">
-          <h2>5 Day Forecast: </h2>
+          <h3>5 Day Forecast</h3>
             <div id="weather-cards">
-              <div id="day1"></div>
-              <div id="day2"></div>
-              <div id="day3"></div>
-              <div id="day4"></div>
-              <div id="day5"></div>
+              <div id="day1" >Monday</div>
+              <div id="day2">Tuesday</div>
+              <div id="day3">Wednesday</div>
+              <div id="day4">Thursday</div>
+              <div id="day5">Friday</div>
             </div>
         </div>
     </main>
-    
+    </div>
+  
+  <script src="Main/scripts/script.js"  ></script>
+  <script src="Main/scripts/forecastScript.js"></script>
+  <script src="Main/scripts/searchScript.js"></script>
 </body>
 </html>
