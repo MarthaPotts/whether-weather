@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: powderblue;
+    background-image: url('images/tristen-lee-nvlanP72Ew0-unsplash.jpg');  
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: auto;
+    width: auto; 
+    max-width: 100%;
+}
+
+/*header*/
+.header-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+/*main*/
+.main-container {
+    display: flex; 
+    flex-flow: row wrap; 
+    border: solid 1px black; 
+}
+.aside-container {
+    display: flex; 
+    flex-flow: row wrap; 
+}
+.aside {
+    display: flex; 
+    flex-flow: column wrap; 
+}
+/*history*/
+.list-group {
+    display: flex; 
+    flex-flow: column wrap;
+    margin: 10px;   
+}
+.form-header {
+    margin: 10px; 
+}
+/*today*/
+.current {
+    display: flex; 
+    flex-flow: column wrap;
+    flex-basis: auto; 
+    align-content: flex-start; 
+    
+    margin: 10px; 
+    padding: 10px;  
+}
+.column { 
+    margin: 5px; 
+    display: flex; 
+    flex-flow: row wrap; 
+}
+.fc-card-body { 
+    padding: 5px; 
+    background-color: powderblue;
+}
+
+.future {
+    display: flex; 
+    flex-flow: row wrap; 
+}
+.input-group {
+    display: flex; 
+    flex-flow: row wrap;
+    margin: 10px;   
+}

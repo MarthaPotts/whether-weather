@@ -4,55 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whether Weather App</title>
-    <script src="https://kit.fontawesome.com/66b2a64f9c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Main/styles/style.css">
+    <title>Whether Weather Dashboard</title>
+    <link rel='stylesheet' href='style.css'/>
 </head>
 <body>
-    <!-- date format (M/D/YYYY), *Fahrenheit, %, mph-->
-    <header class='header'>
-        <h1>Whether Weather Dashboard</h1>
+    <header class='header-container'>
+        <h1 class='header-title'> Whether Weather Dashboard</h1>
     </header>
-    <!-- dynamic gen city-boxes-->
-    <div class='container'>
-    <aside class='saved'>
-        <section class="city"><!--searchbox button with magnifying glass-->
-        <label for="city-search" class='city-search'>Search for a City:</label>
-        <input type="text" placeholder="Search.." 
-        id="city" name="city-search">
-        <button class="search-btn"><i class="fas fa-search-location"></i></button>
 
-        <div class="saved-city">
-          <a href=#><p>Saved City Placeholder</p></a>
-        </div>
-        </section>
-    </aside>
-    <!--City/Date/weather icon; uv-i color-coded; inline elements-->
-    <main class='current-forecast'>
-        <div class="current" id="current">
-          <h3>Current</h3>
-          <p>need some gibberish in here</p>
-          <p>Sunny 85 degrees F</p>
-          <p>Wind Speed @ 6 mph</p>
-          <p>UVIndex: 8</p>
-        </div>
-        
-    <!--5 cards: date/icon/temp/humidity-->
-        <div class="forecast" id="forecast">
-          <h3>5 Day Forecast</h3>
-            <div id="weather-cards">
-              <div id="day1" >Monday</div>
-              <div id="day2">Tuesday</div>
-              <div id="day3">Wednesday</div>
-              <div id="day4">Thursday</div>
-              <div id="day5">Friday</div>
+    <div class='main-container' style='max-width: 1400px'>
+        <div class='aside-container'>
+            <aside class='aside'>
+                <h2 id='form-header' class='form-header'>Search for a City:</h2>
+                <form id='search-form' class='form'>
+                    <div class='form-div'>
+                        <div class='input-group'>
+                            <input class='form-input weather-search'
+                            type='text'
+                            id='search-input'
+                            placeholder='Seattle'/>
+                            <div class='input-group-append'>
+                                <button 
+                                type='submit'
+                                class='btn search-btn'
+                                id='search-button'>Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class='list-group' id='history'></div>
+            </aside>
+
+            <div class='current'>
+                <section id='currently'
+                class='today'></section>
+
+                <section id='forecast'
+                class='future'></section>
             </div>
         </div>
-    </main>
     </div>
-  
-  <script src="Main/scripts/script.js"  ></script>
-  <script src="Main/scripts/forecastScript.js"></script>
-  <script src="Main/scripts/searchScript.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"
+    integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg=="
+    crossorigin="anonymous"></script>
+    <script src='script.js'></script>
 </body>
 </html>
