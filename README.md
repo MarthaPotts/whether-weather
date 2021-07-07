@@ -1,11 +1,18 @@
 # Whether-Weather
 
-A handy app to check the weather to decide **whether** you will go, do, see
-Plan accordingly! 
+## Description
 
-## Whether-Weather
+A handy app to check the weather to decide "**whether**" you will go, do, see!
+Whether-weather will assist in trip planning for the User
 
-will:
-allow you, the user, to select a city and see the current weather in that location as well as the 5 day forecast for that location
+## Installation
 
-Recently searched locations will be saved and retrievable with one click
+Copy/Fork the repo
+
+## Use 
+
+Runs in your browser
+
+## License 
+
+MIT
